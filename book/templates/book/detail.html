@@ -1,8 +1,15 @@
 <h1>{{ book.title }}</h1>
 <h1>{{ book.author }}</h1>
 <h1>{{ book.genre }}</h1>
-<a href="{{ book.fb2.url }}">Download FB2</a>
-<a href="{{ book.txt.url }}">Download TXT</a>
+<!-- <h2>
+    <a href="{{ book.fb2 }}">Download FB2</a>
+</h2> -->
+<p>
+    <a href="{{ book.fb2.url }}">Download FB2</a>
+</p>
+<p>
+    <a href="{{ book.txt.url }}">Download TXT</a>
+</p>
 <!-- <ul>
 {% for choice in question.choice_set.all %}
     <li>{{ choice.choice_text }}</li>
